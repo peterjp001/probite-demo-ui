@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Users</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<body class="">
+    <header  >
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+              <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                        </li>
+                     
+                      <li class="nav-item">
+                        <a class="nav-link active" href="meeting.html" aria-current="page">Rendez-vous <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="devis.html" aria-current="page">Devis <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="sinistre.html" aria-current="page">Sinistre <span class="visually-hidden">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contact.html" aria-current="page">Contact <span class="visually-hidden">(current)</span></a>
+                </li>
+                    </ul> 
+                </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="container">
+        <div class="row m-2">
+          <h4 class="text-center">Devis</h4>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <form class=" mt-2 " id="formDevis" enctype="multipart/form-data">
+              <div class="alert  text-center d-none text-light" id="message">Message</div>
+              <div class="row row-cols-1 row-cols-sm-3 ">
+                <div class="mb-3 col">
+                  <label for="lastName" class="form-label">Nom</label>
+                  <input type="text" class="form-control" name="lastName" id="lastName" > 
+                </div>
+                <div class="mb-3 col">
+                  <label for="firstName" class="form-label">Prenom</label>
+                  <input type="text" class="form-control" name="firstName" id="firstName" > 
+                </div>
+                <div class="mb-3 col">
+                  <label for="phone" class="form-label">Telephone</label>
+                  <input type="text" class="form-control" name="phone" id="phone" > 
+                </div>
+                <div class="mb-3 col">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" name="email" id="email" > 
+                </div> 
+                <div class="mb-3 col">
+                  <label for="" class="form-label">Type devis</label>
+                  <select class="form-select form-select-lg" name="typeDs" id="">
+                      <option selected value="">Select one</option>
+                      <option value="Devis Auto">Devis Auto</option>
+                      <option value="Vol">Sinistre Vol</option> 
+                  </select>
+              </div>
+              <div class="mb-3 col">
+                <label for="attachment" class="form-label">Choose file attachment</label>
+                <input type="file"     class="form-control" name="attachment" id="attachment"  >
+               
+              </div>
+              </div>
+              
+              <div class="mb-3">
+                  <button class="btn btn-primary" type="submit">Submit</button>
+              </div>
+          </form>
+          </div>
+        </div>
+
+      </div>
+ 
+
+  </main>
+  <footer>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+  </script>
+     <script src="js/jquery-3.6.1.min.js"></script>
+     <script src="js/devis.js"></script>
+</body>
+
+</html>
